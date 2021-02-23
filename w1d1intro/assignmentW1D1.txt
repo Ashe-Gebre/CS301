@@ -1,0 +1,28 @@
+1-	   A- It will cause an error. Using a variable, without declaring it, is not allowed.
+
+    B- try, Delete, break, return, switch.
+
+
+2-	Algorithms is a sequence of instructions to achieve a specific task. Any kind of step by step instructions. When this algorithm is executable by a computer, now it is called computer program. 
+
+
+
+3-	A- Taking Shower steps
+-	Take off my close.
+-	Get the water temperature right.
+-	Wet my hair & body.
+-	Use soap thoroughly.
+-	Wash my hair.
+-	Wash my body. 
+-	Use towel for drying.
+
+                   B- Eating meals at Argiro
+-	Wash my hand at the door.
+-	Show my ID at the gate.
+-	Scan my temperature.
+-	Use gloves to pick up.
+-	Pick my favorite foods.
+-	Pick a table and seat. 
+-	Eat.
+
+
