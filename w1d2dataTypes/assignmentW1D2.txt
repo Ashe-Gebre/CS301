@@ -20,6 +20,19 @@ console.log(c);     -1
 If applied to boolean values, the && operator only returns true when both of its operands are true (and false in all other cases), while the || operator only returns false when both of its operands are false (and true in all other cases).
 The value produced by a && or || operator is not necessarily of type Boolean. The value produced will always be the value of one of the two operand expressions.
 
+const a = 3;
+const b = -2;
+
+console.log(a > 0 && b > 0);
+// expected output: false
+
+const a = 3;
+const b = -2;
+
+console.log(a > 0 || b > 0);
+// expected output: true
+
+
 5. Which of the following statements is true? 
 a. In computer programming, a statement can be part of an expression. FALSE
  b. In computer programming, an expression can be a part of a statement.  TRUE
