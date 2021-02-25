@@ -1,0 +1,19 @@
+Q1.
+   If the break is not used , , the program continues to the next labeled statement, 
+   executing the statements until a break or the end of the statement is reached.
+
+
+
+
+Q2.
+
+The output is:
+0
+1
+
+
+
+Q3.
+
+The output would be:
+default
