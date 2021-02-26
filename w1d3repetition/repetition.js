@@ -51,6 +51,33 @@ const prompt = require("prompt-sync")();
         }
         console.log(`The factorial of ${numberC} is ${fact}.`);
     }
+//QUESTION THREE
+
+
+let password= prompt( "Enter password: ");
+
+if(password ==="password"){
+ console.log("Welcome");
+} else if(password !== "password") {
+      for( let i=1; i<3; i++) {
+              password= prompt( "Enter password: ");
+              
+  }
+  console.log("Sorry wrong password , your account is locked!")
+            
+}
+
+
+
+while(password !== "password") {
+    for( let i=0; i<=3; i++) {
+        const password= prompt( "Enter password: ");
+        
+    }
+
+    console.log("Sorry wrong password , your account is locked!")
+}
+
 
 
 
