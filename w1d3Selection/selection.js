@@ -112,35 +112,3 @@ if(borrowerStatus==="Student") {
 
 //The code...
 
-const age= Number(prompt("Enter age of a child : "));
-const season= prompt("Enter the season: ");
-
-if(age > 0 && age <= 5) {
-        if(season==="summer" || season==="fall") {
-            console.log ("Bed time is:  8:30PM" );
-        } else if (season==="winter" || season==="spring") {
-            console.log ("Bed time is:  8:00PM" );
-        } else {
-            console.log ("Invalid season input" )
-        }
-} else if (age >=6 && age <= 12) {
-    if(season==="summer") {
-        console.log ("Bed time is:  9:30PM" );
-    } else if (season==="winter" || season==="spring" || season==="fall") {
-        console.log ("Bed time is:  8:30PM" );
-    } else {
-        console.log ("Invalid season input" )
-    }
-} else if (age >=13) {
-    if(season==="summer") {
-        console.log ("Bed time is:  10:30PM" );
-    } else if (season==="winter" || season==="spring" || season==="fall") {
-        console.log ("Bed time is:  9:30PM" );
-    } else {
-        console.log ("Invalid season input" );
-    }
-
-} else { console.log("Either invalid age or season, please try again");
-
-}
-
