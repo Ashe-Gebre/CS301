@@ -2,15 +2,11 @@
 const prompt = require("prompt-sync")();
 
 
-
-
 //QUESTION ONE
-
 // A & B together:
 
-const number = +prompt("Enter a positives number: ");
+// const number = +prompt("Enter a positive number: ");
 let isPrime = true;
-
 /**
  * check prime number
  * @param {number} number number.
@@ -23,8 +19,7 @@ function checkPrime(number) {
     // check if number is greater than 1
     else if (number > 1) {
 
-        // looping through 2 
-
+       
         for (let i = 2; i < number; i++) {
             if (number % i == 0) {
                 isPrime = false;
@@ -39,26 +34,22 @@ function checkPrime(number) {
         }
     }
 
-    // check if number is less than 1
     else {
         console.log("The number is not a prime number.");
     }
 }
-checkPrime(number);
-
-
+checkPrime(37);
+checkPrime(77);
 
 
 
 // QUESTION TWO
-
 //A & B- Area & Volume of cylinder 
 
 
-
-let radius = +prompt("Enter the raduis of the cylinder: ");
-// eslint-disable-next-line no-unused-vars
-let height = +prompt("Enter the height of the cylinder: ");
+// let radius = +prompt("Enter the raduis of the cylinder: ");
+// // eslint-disable-next-line no-unused-vars
+// let height = +prompt("Enter the height of the cylinder: ");
 
 /**
  * calculate volume a house
@@ -84,9 +75,8 @@ function areaOfCircle(radius) {
     console.log(areaOfCircle);
 }
 
-areaOfCircle(radius);
-volumeOfCylinder(radius, height);
-
+areaOfCircle(1);
+volumeOfCylinder(1, 1);
 
 
 
@@ -149,20 +139,9 @@ console.log("expect 2080", houseVolume(16, 10, 10, 10));
 // living 10*10*16 = 1600
 //tot 2080
 
-
-
-
-
-//ANSWERS for questions from the reading
-
-//1-    We can use a “default” value instead, then we can specify it using “=”.
-//      Sometimes it makes sense to set default values for parameters not in the function declaration, but at a later stage, during its execution.
-
-//2-    Using camelCase.  It should be brief, as accurate as possible and describe what the function does, so that someone reading the code gets an indication of what the function does.
-//      The name should be descriptive of its function. It must be meaningful.
-//      A function should do exactly what is suggested by its name, no more.
-
-//3-     Functions should be short and do exactly one thing. Functions themselves should tell what is going on. There is nothing to comment or little to comment. And the code structure is better when split. It is clear what every function does, what it takes and what it returns.
-//      Functions can be created even if we don’t intend to reuse them. They structure the code and make it readable.
+exports.checkPrime;
+exports.houseVolume;
+exports.volumeOfCylinder;
+exports.areaOfCircle;
 
 

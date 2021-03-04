@@ -1,0 +1,43 @@
+
+
+Ninja Code
+=========
+
+- Brevity is the soul of wit
+        Make the code as short as possible. Show how smart you are.
+
+        Dont not scarifice code clarity for brevity.
+
+- One-letter variables
+       Do not use single letter variables as they not descriptive and difficult to search. 
+
+- Using abbreviations
+       Do not use abbreviations as they might not be understandable by others.
+
+- Use abstract 
+       It is not a good practice to use abstract names.
+       There’s just no way to figure out without a good meditation!
+
+- Attention test
+       Dont try to test attentions by using almost simlilar like variable names like date and data.
+
+- Smart synonyms
+      Do not use synonyms For instance, consider function prefixes. If a function shows a message 
+      on the screen – start it with display…, like displayMessage. And then if another function 
+      shows on the screen something else, like a user name, start it with show… (like showName).
+
+-Reuse names
+      Reusing existing name creats confussion. so avoid them
+
+-Underscores for fun
+      Underscores makes the code even more fragile and increases the probability of future errors.
+
+-Show your love
+      Dont use names to show love to your work like super, nice etc. you code will lose details.
+
+- Overlap outer variables
+      Using same names for variables inside and outside a function is not recommened.
+      
+-Side-effects everywhere!
+      Using same names for variables inside and outside a function is not recommened.
+
