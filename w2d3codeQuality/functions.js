@@ -1,46 +1,26 @@
+/* eslint-disable require-jsdoc */
 "use strict";
-const prompt = require("prompt-sync")();
 
 
 //QUESTION ONE
-// A & B together:
 
-// const number = +prompt("Enter a positive number: ");
-let isPrime = true;
+
+
 /**
  * check prime number
  * @param {number} number number.
- * @returns {boolean} boolean.
+ * @returns {boolean} checkPrime boolean.
  */
+// eslint-disable-next-line no-unused-vars
+exports.checkPrime=checkPrime; 
 function checkPrime(number) {
-    if (number === 1) {
-        console.log("1 is neither prime nor composite number.");
-    }
-    // check if number is greater than 1
-    else if (number > 1) {
 
-       
-        for (let i = 2; i < number; i++) {
-            if (number % i == 0) {
-                isPrime = false;
-                break;
-            }
-        }
-
-        if (isPrime) {
-            console.log(`${number} is a prime number`);
-        } else {
-            console.log(`${number} is a not prime number`);
-        }
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0)
+            return false;
     }
-
-    else {
-        console.log("The number is not a prime number.");
-    }
+    return true;
 }
-checkPrime(37);
-checkPrime(77);
-
 
 
 // QUESTION TWO
@@ -60,8 +40,8 @@ checkPrime(77);
  */
 function volumeOfCylinder(radius, height) {
 
-    let volumeOfCylinder = (Math.PI * radius * radius * height);
-    console.log(volumeOfCylinder);
+    let volumeOfCylinder = (Math.PI * Math.pow(radius,2)* height);
+    return volumeOfCylinder; 
 }
 /**
  * calculate volume a house
@@ -71,8 +51,8 @@ function volumeOfCylinder(radius, height) {
  * @returns {number} area of circle.
  */
 function areaOfCircle(radius) {
-    let areaOfCircle = (Math.PI * radius * radius);
-    console.log(areaOfCircle);
+    let areaOfCircle = (Math.PI * Math.pow(radius,2));
+    return areaOfCircle;
 }
 
 areaOfCircle(1);
@@ -139,9 +119,9 @@ console.log("expect 2080", houseVolume(16, 10, 10, 10));
 // living 10*10*16 = 1600
 //tot 2080
 
-exports.checkPrime;
-exports.houseVolume;
-exports.volumeOfCylinder;
-exports.areaOfCircle;
+
+exports.houseVolume = houseVolume;
+exports.volumeOfCylinder = volumeOfCylinder;
+exports.areaOfCircle = areaOfCircle;
 
 

@@ -22,7 +22,7 @@ describe("checkPrime", function () {
 describe("areaOfCircle", function () {
 
     it("area of unit circle is Pi", function () {
-        assert.strictEqual(fun.areaOfCircle(1), Math.PI );
+        assert.strictEqual(fun.areaOfCircle(1), Math.PI*1);
     });
 
 });
@@ -31,7 +31,7 @@ describe("areaOfCircle", function () {
 describe("volumeOfCylinder", function () {
 
     it("area of unit circle is Pi", function () {
-        assert.strictEqual(fun.volumeOfCyliner(1, 1), Math.PI * Math.PI);
+        assert.strictEqual(fun.volumeOfCylinder(1, 1), Math.PI * Math.pow(1,2)* 1);
     });
 
 });
