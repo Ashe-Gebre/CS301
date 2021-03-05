@@ -64,15 +64,22 @@ function rotateRight(arr) {
 /**
  * 
  * @param {Array} arr is array of numbers
- * @param {number} nnn is array of numbers
+ * @param {number} times is array of numbers
  * @returns {Array} get n times right rotated array
  */
-function rotateNRight(arr, nnn) {
-    for (var i = 0; i < nnn; i++) {
-        arr.unshift(arr.pop());
+function rotateNRight( arr , times ){
+    while( times-- ){
+    var temp = arr.shift();
+     arr.push( temp );
+     }
     }
-}
 
+    // function rotateNRight(arr, nnn) {
+    //     for (var i = 0; i < nnn; i++) {
+    //         arr.unshift(arr.pop());
+    //     }
+    // }
+    
 //QUESTION SIX
 
 
@@ -135,3 +142,23 @@ function matrixAddition(aaa, bbb) {
     }
     return ccc;
 }
+
+
+
+//READIMG ASSIGNEMNT
+
+/*The localeCompare() method returns a number indicating whether a reference string comes before, 
+or after, or is the same as the given string in sort order.
+The new locales and options arguments let applications specify the language whose sort order 
+should be used and customize the behavior of the function. In older implementations, 
+which ignore the locales and options arguments, 
+the locale and sort order used are entirely implementation-dependent.
+
+The syntax is:
+referenceStr.localeCompare(compareString[, locales[, options]])
+
+Return value:
+A negative number if referenceStr occurs before compareString;
+positive if the referenceStr occurs after compareString; 0 if they are equivalent.
+
+*/
