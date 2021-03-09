@@ -54,7 +54,7 @@ and “walking” is “ing”. This function takes two parameters and returns t
 */
 describe("suffix", function () {
     const jackson = "Jackson";
-    const johnson = "Johnson";
+    const johnson = "AAJohnson";
     const wholesome = "wholesome";
 
     it("checks for true case", function () {
