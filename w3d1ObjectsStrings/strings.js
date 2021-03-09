@@ -5,6 +5,7 @@ exports.checkSpam = checkSpam;
 exports.titleCase = titleCase;
 exports.getAverageAge = getAverageAge;
 exports.sumFirst = sumFirst;
+exports.suffix = suffix;
 
 
 //QUESTION ONE..Write the code, one line for each action:
@@ -71,7 +72,32 @@ function checkSpam(str) {
     }
 }
 
-//QUESTION FIVE
+//QUESTION FIVE...suffix of two strings...
+
+/**
+ * 
+ * @param {string} str1 string
+ * @param {string} str2 string
+ * @returns {string} string
+ */
+function suffix(str1, str2) {
+ 
+    let common = "";
+   
+    for (let i = str1.length - 1; i >= 0; i--) {
+         for (let j = str2.length - 1; j >= 0; j--) {
+            if (str1.slice(i) === str2.slice(j)) {
+ 
+                common = str1[i] + common ; 
+                break;
+            }
+ 
+        }
+    }
+ 
+    return common;
+ 
+}
 
 //QUESTION SIX...Write a function named titleCase with one parameter named s. This function returns a copy of s
 //but with the first letter of each word capitalized.

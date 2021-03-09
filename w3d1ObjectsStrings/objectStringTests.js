@@ -100,3 +100,4 @@ describe("first elements", function () {
         assert.strictEqual(str.sumFirst(arr), 9);
     });
 });
+
