@@ -109,3 +109,4 @@ function ssReverse(arr) {
     }
     return [...arr, ...arr1, ...arr2];
  }
+ console.log(merge([1,5,9], [1,2,3,5,6,8]));
