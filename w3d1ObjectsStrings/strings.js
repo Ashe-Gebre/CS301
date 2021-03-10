@@ -81,8 +81,7 @@ function checkSpam(str) {
  * @returns {string} string
  */
 function suffix(str1, str2) {
- 
-    let common = "";
+     let common = "";
    
     for (let i = str1.length - 1; i >= 0; i--) {
          for (let j = str2.length - 1; j >= 0; j--) {
