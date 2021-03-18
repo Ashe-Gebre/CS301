@@ -67,25 +67,26 @@ function mostFrequentSight(array) {
 * @returns {Number} counted number output
 */
 function countSocksPairs(arr) {
-    let n = 10;
+    let numberOfPairs = 0;
 
-    let count = 0, number = 0;
+    for (let i = 0; i < arr.length - 1; i++)
+    {
+        let countSocksToTheRight = 0;
 
-    for (let i = 0; i < n - 1; i++) {
-        for (let j = i + 1; j < n; j++) {
-            if (arr[i] == arr[j]) {
-                count++;
+        for (let j = i + 1; j < arr.length; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                countSocksToTheRight++;
             }
         }
+        if (countSocksToTheRight % 2 != 0)
+        {
+            numberOfPairs++;
+        }
 
-        if (count % 2 == 0)
-            number++;
-
-    }
-    return number;
+    } return numberOfPairs;
 }
-
-
 
 //4 
 // eslint-disable-next-line require-jsd
