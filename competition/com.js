@@ -17,7 +17,11 @@ exports.computeCharges = computeCharges;
 exports.findMinDistance = findMinDistance;
 
 //Q1
-// eslint-disable-next-line require-jsdoc
+/**
+* 
+* @param {Number} count is number
+* @returns {Number} counted number output
+*/
 function divisibleSumPairs(arr, k) {
     let count = 0;
 
@@ -36,7 +40,11 @@ function divisibleSumPairs(arr, k) {
 
 
 //Q2
-// eslint-disable-next-line require-jsd
+/**
+* 
+* @param {Number} count is number
+* @returns {Array} counted number output
+*/
 function mostFrequentSight(array) {
     for (const value of array) {
 
@@ -137,6 +145,11 @@ function getAverage(arr) {
     average = total / arr.length;
     return average;
 }
+
+function getMax(arr) {
+    const max = Math.max(...arr);
+    return max;
+    }
 
 
 
