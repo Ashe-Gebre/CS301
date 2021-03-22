@@ -85,7 +85,7 @@ function countSocksPairs(arr) {
             numberOfPairs++;
         }
 
-    } return numberOfPairs;
+    } return numberOfPairs
 }
 
 //4 
